@@ -1,0 +1,76 @@
+/*-------------------------------------------------------------------------------------------*/
+/*- SELECT PRICE POP UP ---------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+	/*--------------------------*/
+	/*- PRICE OVERLAY ----------*/
+	.select-price{background: #fff; width: 740px; margin: 20px 0px; border: 1px solid #ccc; z-index: 3;
+								-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px;}
+								
+
+	/*--------------------------*/
+	/*- BANNER HEADER BLOCK ----*/
+	.banner-header{padding: 1px 15px 15px; background: #3D556C url(http://cdn.obox-design.com/layout/feature-bg.jpg) top center; position: relative;
+								-moz-border-radius: 6px 6px 0px 0px; -webkit-border-radius: 6px 6px 0px 0px; border-radius: 6px 6px 0px 0px;}
+	.banner-header h3{color: #fff; font-size: 25px; line-height: 25px; padding: 0px 0px 9px; margin-bottom: 0px;}
+	.banner-header p{font-size: 15px; color: #ccc; margin: 0px; padding: 0px;}
+	.banner-header a.upgrade-now{padding: 4px 10px; margin-left: 10px; background: url(http://www.obox-design.com/images/layout/feature-list-bg.png) repeat-x center;
+									color: #793100; font-size: 14px; font-weight: bold; text-decoration: none; text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
+									-moz-border-radius: 60px; -webkit-border-radius: 60px; border-radius: 60px;
+									-moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 1); -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 1); box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);}
+	.banner-header a:hover{background-position: bottom; color: #000;}
+	
+
+	/*--------------------------*/
+	/*- FEATURE ELEMENTS -------*/
+	
+		/*-----------------*/
+		/*- TABS ----------*/
+		.feature-list{clear: both; padding: 0px 15px; margin: 20px -15px -15px; background: none; position: relative; z-index: 3;}
+		.feature-list li{float: left; margin: 0px 5px 0px 0px; border-radius: 5px 5px 0px 0px; position: relative; z-index: 4;}
+		.feature-list li:last-child{border: none;}
+		.feature-list li a{display: block; padding: 8px 10px; border: none; border-bottom: none; border-radius: 5px 5px 0px 0px;
+							text-decoration: none; font-weight: bold; color: #fff;}
+		.feature-list li.selected{top: 1px;}
+		.feature-list li a:hover, .feature-list li.selected a{background: #fff; color: #3D556C;}
+		.feature-list li.selected a:hover{color: #000;}
+
+		/*-----------------*/
+		/*- TABS ITEMS ----*/
+		.feature-item{clear: both; padding: 20px; overflow: hidden; position: relative;}
+		.feature-item li{display: none; overflow: hidden;}
+		.feature-item li.selected{display: block;}
+		.feature-item .copy{float: left; width: 280px; line-height: 1.6em;}
+			
+		.feature-item .copy h4{text-transform: none; font-size: 13px; margin: 0px; padding: 0px;}
+		.feature-item .copy h4 + p{margin-bottom: 20px;}
+		
+		.feature-item .copy-image{float: right; width: 380px;}
+	
+	
+	/*--------------------------*/
+	/*- MEMBERSHIP -------------*/
+	.membership-block{clear: both; padding: 15px 0px; background: #f0f0f0; border-top: 1px solid #ccc; margin: 0px 0px 0px; text-align: center;
+						-moz-border-radius: 0px 0px 6px 6px; -webkit-border-radius: 0px 0px 6px 6px; border-radius: 0px 0px 6px 6px;}
+	.membership-block h3{font-size: 20px; margin: 0px 0px 8px;}
+	.membership-block p{width: 300px; margin: 0px auto; padding: 0px;}
+	
+	a.get-started{display: block; width: 260px; height: 56px; margin: 10px auto 0px; position: relative; z-index: 10; background: url(http://cdn.obox-design.com/layout/sprite.png) 0px -2242px no-repeat; text-indent: -9999px; overflow: hidden;}
+	a.get-started:hover{background-position: -260px -2242px;}
+	
+	
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/*- CLEARFIX --- * I prefer not to touch this code, I don't recommend you do so either, it works... so don't fix whats working ;) * -*/
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* http://sonspring.com/journal/clearing-floats */
+html body * span.clear,
+html body * div.clear,
+html body * li.clear,
+html body * dd.clear
+{background: none; border: 0; clear: both; display: block; float: none; font-size: 0; list-style: none;	margin: 0; padding: 0; overflow: hidden; visibility: hidden; width: 0; height: 0;}
+
+/* http://www.positioniseverything.net/easyclearing.html */
+.clearfix:after{clear: both; content: '.'; display: block; visibility: hidden; height: 0;}
+.clearfix{display: inline-block;}
+* html .clearfix{height: 1%;}
+.clearfix{display: block;}

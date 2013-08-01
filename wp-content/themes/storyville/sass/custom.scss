@@ -1,0 +1,315 @@
+img { 
+	height: auto;
+}
+
+iframe { 
+	border: 0; 
+	max-width: 100%; 
+}
+
+img[src*="no_image"],
+.no-image {
+    background: url(images/storyville-tagline.png) no-repeat center center #f9f9f9;
+}
+
+
+.post-thumb {
+    height: 140px;
+    overflow:hidden;
+    border:1px solid #eee;
+    text-align: center;
+}
+
+.post-thumb:hover {
+    border:1px solid #ccc;
+}
+
+/* Lower & Footer Content */
+.Center { /* Centers content */
+    clear: both;
+    width: 980px;
+    margin: 0 auto;
+}
+#Container {
+    width: 980px;
+    margin: auto;
+}
+#ContainerLower {
+    clear: both;
+    float: left;
+    width: 100%;
+    padding: 0 0 20px 0;
+}
+#ContainerFooter {
+    clear: both;
+    float: left;
+    width: 100%;
+}
+#Footer { /* Copyright info */
+    clear: both;
+    font-size: 0.85em;
+    padding: 15px 0;
+    margin: 0;
+}
+#FooterUpper { /* Contains links lists & newsletter */
+    clear: both;
+    padding: 20px 0 0;
+ 
+    padding-top: 20px;
+}
+#FooterUpper .Column {
+    padding-bottom: 15px;
+    margin: 0 20px 0 0;
+    display: table-cell;
+    padding-right: 10px;
+}
+#FooterUpper .Column.NewsletterColumn {
+    width: 245px;
+    margin-right: 0;
+}
+#FooterUpper h2 {
+    margin-bottom: 5px;
+}
+#FooterUpper ul {
+    padding: 0;
+    margin: 0;
+}
+#FooterUpper li {
+    list-style: none;
+    font-size: 0.95em;
+    background: url(../images/white/Arrow.gif) 0 50% no-repeat;
+    padding: 2px 0 2px 10px;
+    margin: 0;
+}
+#FooterUpper li a {
+    text-decoration: none;
+}
+#FooterUpper li a:hover {
+    text-decoration: underline;
+}
+#FooterUpper li ul, #FooterUpper li:hover ul {
+    display: none !important;
+}
+#FooterUpper .RecentNews li {
+    background: none;
+    margin-left: -8px;
+}
+#FooterUpper .RecentNews li p {
+    width: 15em;
+    margin: 5px 0 0;
+}
+#FooterUpper h2 {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    color: #b2ab90;
+}
+
+#FooterUpper li {
+    list-style: none;
+    font-size: 15px;
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+
+#FooterUpper li a {
+    color: #695349;
+    font-family: 'tglt-cnbold', Helvetica, Arial, sans-serif;
+    line-height: 1.4;
+    font-size: 14px;
+    text-shadow: none;
+    letter-spacing: 1.5px;
+}
+
+#FooterUpper li a:hover {
+    color: #a18b75;
+}
+
+#FooterUpper h6 {
+    font: 18px 'tglt-bold2', Helvetica, Arial, sans-serif;
+    color: #896946;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.home #ContainerFooter {
+    margin-top: -380px;
+    position: relative;
+    z-index: 100;
+}
+
+.home .footer-strip {
+    border-bottom: none;
+    background-color: transparent;
+}
+
+.CenterFooter {
+    
+}
+
+#FooterUpper, .footer-strip {
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#FooterUpper {
+    background: #2c180b;
+}
+.footer-strip {
+    background: rgba(83, 47, 24, .35);
+}
+
+
+
+#FooterUpper .Column {
+    width: 16%;
+}
+
+.footer-strip {
+    height: 70px;
+    border-bottom: 1px solid #53351b;
+    background-color: #28150A;
+}
+
+.footer-strip-center {
+    width: 100%;
+    clear: both;
+    margin: 0 auto 5px;
+    padding-top:10px;
+}
+.footer-content {
+  max-width: 940px;
+  margin: 0px auto;
+}
+
+/*------------------------------------*/
+/** Top Footer Icons
+/*------------------------------------*/
+.social-icons {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 10px;
+    height: 45px;
+}
+
+.social-icons a {
+    padding-right: 10px;
+    margin-right: 10px;
+    width: 60px;
+    height: 40px;
+}
+
+.social-icons img {
+    opacity: .5;
+    width: 29px;
+    height: 29px;
+    margin:10px 3px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.social-icons img:hover {
+    opacity: 1;
+}
+
+a.footer-logo {
+	background-image: url(images/storyville-tagline.png);
+    
+	height: 39px;
+    width: 170px;
+    
+	text-indent: -9999px;
+    background-repeat: no-repeat;
+    
+	margin: 5px 20px 0 0;
+	display: inline-block;
+	float: left;
+}
+.footer-strip .social-icons {
+    height: 100%;
+    margin-top: 0px;
+    margin-right: 0px;
+}
+.footer-strip .social-icons > a {
+    display: block;
+    float: left;
+    background: url(images/socials-border.png) right center no-repeat;
+    width: 50px;
+    height: 100%;
+    margin-right: 20px;
+}
+.footer-strip .social-icons > a:last-child {
+    background: transparent;
+}
+#FooterUpper li.copy-text {
+    font-size: 10px;
+    color: #695349;
+    font-family: 'tglt-cnbold', Helvetica, Arial, sans-serif;
+    line-height: 1.4;
+    text-shadow: none;
+    letter-spacing: 1.5px;
+}
+
+.ad {
+    margin-bottom:15px;
+}
+
+#sidebar-responsive .ad > img {
+    width:100%;
+}
+
+@media only screen and (max-width: 620px) and (min-width: 0) {
+	.grid-item {
+		width:100%;
+	}
+
+	.post-thumb > img {
+		width:100%;
+	}
+
+	#FooterUpper .Column {
+	    display: block;
+	
+	    width: 100%;
+}
+
+	div#HeaderLower a {
+		padding: 0px 0px !important;
+	}
+	
+	#FooterUpper
+	{
+		padding-left: 20px;
+	}
+	
+	.footer-strip .social-icons > a
+	{
+		width: 30px;
+		padding-right: 25px;
+	}
+	
+	.footer-strip .social-icons > a:last-child
+	{
+		margin-right: 5px;
+		padding-right: 0px;
+	}
+	
+	.social-icons.fr
+	{
+		float: none !important;
+		margin: 0 auto !important;
+		display: block !important;
+		text-align: center;
+	}
+	
+	#FooterUpper h6
+	{
+		font-size: 15px;
+	}
+}

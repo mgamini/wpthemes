@@ -1,0 +1,1446 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold|Droid+Serif:regular,italic,bold,bolditalic&subset=latin);
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 114, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/*
+Theme Name: Herc
+Theme URI: http://www.elmastudio.de/wordpress-themes/ari/
+Description: Ari is a minimalistic, flexible three-column blog theme. The theme uses CSS3 media queries for its responsive layout and is therefore optimized for tablet pcs and smart phones (the theme switches to a two-column layout when viewed on a horizontal iPad screen, and to a one-column layout on iPhones). You can also choose a dark color scheme and the backgound-, text- and link-colors can be customized in the theme options page.
+Author: Garrett Amini - Cooper Crosby - Elmastudio
+Author URI: http://www.elmastudio.de/wordpress-themes/
+Version: 1.1.2
+Tags: white, dark, three-columns, left-sidebar, right-sidebar, flexible-width, custom-colors, custom-menu, theme-options, threaded-comments, sticky-post, translation-ready
+License: GNU/GPL Version 2 or later
+License URI: http://www.gnu.org/licenses/gpl.html
+*/
+/* Google Fonts Import
+--------------------------------------------- */
+/* Reset
+--------------------------------------------- */
+/* line 19, ../sass/ari.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+
+/* line 28, ../sass/ari.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 31, ../sass/ari.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 34, ../sass/ari.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* General Structure and Styles
+--------------------------------------------- */
+/* line 41, ../sass/ari.scss */
+body {
+  font-family: 'Droid Sans', arial, sans-serif;
+  color: #4C4C4C;
+  background-color: #fff;
+}
+
+/* line 46, ../sass/ari.scss */
+#wrap {
+  max-width: 960px;
+  margin: 20px auto 0 auto;
+  padding: 0px 30px 0px 30px;
+  z-index: 0;
+}
+
+/* line 52, ../sass/ari.scss */
+#sidebar-primary {
+  width: 240px;
+  margin: 0px 0px 60px 0px;
+  float: left;
+  position: fixed;
+}
+
+/* line 58, ../sass/ari.scss */
+#main {
+  width: 75%;
+  margin-top: 85px;
+  float: right;
+}
+
+/* line 63, ../sass/ari.scss */
+#content {
+  width: 62.5%;
+  margin: 0px 0px 60px 0px;
+  padding: 0px 0px 0px 60px;
+  float: left;
+  font-size: 14px;
+}
+
+/* line 70, ../sass/ari.scss */
+#sidebar-secondary {
+  width: 20.8%;
+  margin: 0px 0px 60px 0px;
+  float: right;
+}
+
+/* line 75, ../sass/ari.scss */
+#footer {
+  width: 70%;
+  float: right;
+  padding: 0px 0px 30px 0px;
+  clear: both;
+  font-size: 12px;
+  overflow: hidden;
+}
+
+/* Alignment
+--------------------------------------------- */
+/* line 85, ../sass/ari.scss */
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+}
+
+/* line 90, ../sass/ari.scss */
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 10px;
+}
+
+/* line 95, ../sass/ari.scss */
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 103, ../sass/ari.scss */
+img.alignleft,
+img.alignright,
+img.aligncenter {
+  margin-bottom: 10px;
+}
+
+/* Headings
+--------------------------------------------- */
+/* line 108, ../sass/ari.scss */
+#content .post h1 {
+  padding: 0px 0px 20px 0px;
+  font-size: 22px;
+  line-height: 28px;
+}
+
+/* line 113, ../sass/ari.scss */
+#content h2 {
+  padding: 0px 0px 20px 0px;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+/* line 118, ../sass/ari.scss */
+#content h3 {
+  padding: 20px 0px 12px 0px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* line 123, ../sass/ari.scss */
+#content h4 {
+  padding: 20px 0px 10px 0px;
+  font-size: 15px;
+  line-height: 21px;
+}
+
+/* line 128, ../sass/ari.scss */
+#content h5 {
+  padding: 16px 0px 8px 0px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* line 133, ../sass/ari.scss */
+#content h6 {
+  padding: 10px 0px 5px 0px;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+/* Links
+--------------------------------------------- */
+/* line 141, ../sass/ari.scss */
+#content h2 a {
+  color: #4C4C4C;
+}
+
+/* line 144, ../sass/ari.scss */
+a, #content h2 a:hover {
+  text-decoration: none;
+}
+
+/* line 147, ../sass/ari.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* --- Link Colors --- */
+/* line 151, ../sass/ari.scss */
+a, ul.sidebar li.widget_text a {
+  color: #88C34B;
+}
+
+/* line 154, ../sass/ari.scss */
+ul.sidebar a, p.meta a, .comment-meta a, p.logged-in-as a, a.post-edit-link, #footer a {
+  color: #999;
+}
+
+/* line 157, ../sass/ari.scss */
+#content h2 a:hover, ul.sidebar a:hover, .comment-meta a:hover, p.logged-in-as a:hover, p.meta a:hover, a.post-edit-link:hover, #footer a:hover {
+  color: #88C34B;
+}
+
+/* line 160, ../sass/ari.scss */
+#searchsubmit:hover, form#commentform p.form-submit input#submit:hover, input.wpcf7-submit:hover {
+  background: #88C34B;
+}
+
+/* Lists
+--------------------------------------------- */
+/* line 166, ../sass/ari.scss */
+#content #page ul, #content .post ul {
+  padding: 20px 0px 0px 25px;
+}
+
+/* line 169, ../sass/ari.scss */
+#content #page ul li, #content .post ul li {
+  padding: 0px 0px 20px 0px;
+  line-height: 21px;
+  list-style: square !important;
+}
+
+/* line 174, ../sass/ari.scss */
+#content #page ol, #content .post ol {
+  padding: 20px 0px 0px 30px;
+}
+
+/* line 177, ../sass/ari.scss */
+#content #page ol li, #content .post ol li {
+  padding: 0px 0px 20px 0px;
+  line-height: 21px;
+  list-style: decimal;
+}
+
+/* line 182, ../sass/ari.scss */
+#content #page ol ol li, #content .post ol li ol li {
+  list-style: upper-alpha !important;
+}
+
+/* line 185, ../sass/ari.scss */
+#content #page ol ol ol li, #content .post ol li ol ol li {
+  list-style: lower-roman !important;
+}
+
+/* Sidebars
+--------------------------------------------- */
+/* line 191, ../sass/ari.scss */
+ul.sidebar {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+/* line 195, ../sass/ari.scss */
+ul.sidebar li.widget-container, ul.sidebar li.pagenav, ul.sidebar li.categories {
+  margin: 0px 0px 30px 0px;
+  padding: 0px 0px 10px 0px;
+  border-bottom: 1px dotted #4C4C4C;
+  overflow: hidden;
+  line-height: 23px;
+}
+
+/* line 202, ../sass/ari.scss */
+ul.sidebar h3.widget-title {
+  padding: 0px 0px 5px 0px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Sidebar Primary
+--------------------------------------------- */
+/* --- Theme Logo --- */
+/* line 212, ../sass/ari.scss */
+#sidebar-primary .logo {
+  margin: 0px 0px 30px 0px;
+  overflow: hidden;
+}
+
+/* line 216, ../sass/ari.scss */
+#sidebar-primary .logo h1 {
+  padding: 5px 0px 0px 0px;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+/* line 221, ../sass/ari.scss */
+#sidebar-primary .logo h1 a:hover {
+  text-decoration: none;
+}
+
+/* line 224, ../sass/ari.scss */
+#sidebar-primary .logo p {
+  font-family: 'Droid Serif',  Times, serif;
+  font-style: italic;
+  font-size: 13px;
+}
+
+/* line 229, ../sass/ari.scss */
+#sidebar-primary .logo img {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- Text Widget --- */
+/* line 235, ../sass/ari.scss */
+ul.sidebar li.widget_text p {
+  line-height: 1.6 !important;
+}
+
+/* line 238, ../sass/ari.scss */
+#sidebar-primary ul.sidebar li.widget_text img {
+  margin: 3px 10px 0px 0px;
+  float: left;
+}
+
+/* Sidebar Secondary
+--------------------------------------------- */
+/* line 245, ../sass/ari.scss */
+#sidebar-secondary img {
+  max-width: 100%;
+  display: block;
+  margin: 0px;
+  padding: 0;
+}
+
+/* line 251, ../sass/ari.scss */
+#sidebar-secondary img.banner {
+  max-width: 100%;
+  display: block;
+  margin: 0px 0px 10px 0px;
+  padding: 0;
+}
+
+/* Sidebar Widgets (can be used for both Sidebars)
+--------------------------------------------- */
+/* line 260, ../sass/ari.scss */
+ul.sidebar li.widget_archive ul li, ul.sidebar li.widget_pages ul li.page_item, ul.sidebar li.widget_categories ul li.cat-item, ul.sidebar li.widget_links ul.blogroll li, ul.sidebar li.widget_nav_menu ul#menu-navigation li.menu-item, ul.sidebar li.widget_meta ul li {
+  line-height: 23px;
+}
+
+/* --- Text Widget --- */
+/* line 264, ../sass/ari.scss */
+ul.sidebar li.widget_text img {
+  margin: 3px 10px 0px 0px;
+  float: left;
+}
+
+/* --- Custom Menu Widget --- */
+/* line 269, ../sass/ari.scss */
+ul.sub-menu {
+  margin: 0px 0px 0px 15px;
+}
+
+/* line 272, ../sass/ari.scss */
+ul.sidebar li.widget_categories ul li.cat-item ul.children {
+  margin: 0px 0px 0px 15px;
+}
+
+/* --- Pages Widget --- */
+/* line 276, ../sass/ari.scss */
+ul.sidebar li.widget_pages ul li.page_item ul.children {
+  margin: 0px 0px 0px 15px;
+}
+
+/* --- Search Widget --- */
+/* line 280, ../sass/ari.scss */
+.search-input {
+  max-width: 100%;
+  width: 95%;
+  margin: 0px 0px 4px 0px;
+  font-size: 12px;
+  float: left;
+}
+
+/* line 287, ../sass/ari.scss */
+#searchsubmit {
+  margin: 0px 4px 0px 0px;
+  padding: 4px 7px 4px 7px;
+  float: right;
+  background: #4C4C4C;
+  border: none;
+  font-family: 'Droid Sans', arial, sans-serif;
+  font-size: 12px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* --- Recent Post Widget --- */
+/* line 299, ../sass/ari.scss */
+ul.sidebar li.widget_recent_entries ul li {
+  padding: 0px 0px 12px 0px;
+  line-height: 16px;
+}
+
+/* line 303, ../sass/ari.scss */
+ul.sidebar li.widget_recent_entries ul li a {
+  line-height: 16px;
+}
+
+/* --- Recent Comments --- */
+/* line 307, ../sass/ari.scss */
+ul.sidebar li.widget_recent_comments ul#recentcomments li.recentcomments {
+  padding: 0px 0px 12px 0px;
+  line-height: 16px;
+}
+
+/* line 311, ../sass/ari.scss */
+ul.sidebar li.widget_recent_comments ul#recentcomments li.recentcomments a {
+  padding: 0px 0px 12px 0px;
+}
+
+/* --- Calendar Widget --- */
+/* line 315, ../sass/ari.scss */
+table#wp-calendar caption {
+  font-family: 'Droid Serif',  Times, serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-style: italic;
+  text-align: left;
+  padding: 0px 0px 3px 0px;
+}
+
+/* line 323, ../sass/ari.scss */
+table#wp-calendar td {
+  padding: 3px;
+}
+
+/* --- Social Links Custom Widget --- */
+/* line 327, ../sass/ari.scss */
+ul.sidebar li.widget_sociallinks a {
+  padding: 0px 20px 0px 20px;
+  line-height: 23px;
+}
+
+/* line 331, ../sass/ari.scss */
+ul.sidebar li.widget_sociallinks a.rss {
+  background: url(images/rss-icon.png) 0 0 no-repeat;
+}
+
+/* line 334, ../sass/ari.scss */
+ul.sidebar li.widget_sociallinks a.twitter {
+  background: url(images/twitter-icon.png) 0 0 no-repeat;
+}
+
+/* line 337, ../sass/ari.scss */
+ul.sidebar li.widget_sociallinks a.facebook {
+  background: url(images/fb-icon.png) 0 0 no-repeat;
+}
+
+/* line 340, ../sass/ari.scss */
+ul.sidebar li.widget_sociallinks a.googleplus {
+  background: url(images/googleplus-icon.png) 0 0 no-repeat;
+}
+
+/* line 343, ../sass/ari.scss */
+ul.sidebar li.widget_sociallinks a.flickr {
+  background: url(images/flickr-icon.png) 0 0 no-repeat;
+}
+
+/* line 346, ../sass/ari.scss */
+ul.sidebar li.widget_sociallinks a.vimeo {
+  background: url(images/vimeo-icon.png) 0 0 no-repeat;
+}
+
+/* line 349, ../sass/ari.scss */
+ul.sidebar li.widget_sociallinks a.xing {
+  background: url(images/xing-icon.png) 0 0 no-repeat;
+}
+
+/* line 352, ../sass/ari.scss */
+ul.sidebar li.widget_sociallinks a.linkedin {
+  background: url(images/linkedin-icon.png) 0 0 no-repeat;
+}
+
+/* line 355, ../sass/ari.scss */
+ul.sidebar li.widget_sociallinks a.delicious {
+  background: url(images/delicious-icon.png) 0 0 no-repeat;
+}
+
+/* Posts
+--------------------------------------------- */
+/* line 361, ../sass/ari.scss */
+#content .post, #content .page {
+  padding: 0px 0px 1px 0px;
+  margin: 0px 0px 50px 0px;
+  border-bottom: 1px dotted #4C4C4C;
+}
+
+/* line 366, ../sass/ari.scss */
+#content .post p, #content .page p {
+  padding: 0px 0px 15px 0px;
+  font-size: 14px;
+  line-height: 23px;
+}
+
+/* line 371, ../sass/ari.scss */
+#content .post p small {
+  font-size: 13px;
+}
+
+/* line 374, ../sass/ari.scss */
+#content blockquote {
+  margin: 10px 0px 30px 0px;
+  padding: 0px 0px 0px 16px;
+  background: url(images/blockquote-border.jpg) 0 0 repeat-y;
+  font-family: 'Droid Serif',  Times, serif;
+  line-height: 21px;
+  font-style: italic;
+}
+
+/* line 382, ../sass/ari.scss */
+#content blockquote p {
+  padding: 0 !important;
+}
+
+/* line 385, ../sass/ari.scss */
+#content blockquote p cite {
+  padding: 5px 0px 0px 0px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* line 390, ../sass/ari.scss */
+#content address {
+  padding: 0px 0px 20px 0px;
+  line-height: 20px;
+}
+
+/* line 394, ../sass/ari.scss */
+#content pre {
+  padding: 0px 0px 20px 0px;
+}
+
+/* line 397, ../sass/ari.scss */
+#content table {
+  margin: 10px 0px 30px 0px;
+}
+
+/* line 400, ../sass/ari.scss */
+#content table tr {
+  border-bottom: 1px solid #4C4C4C;
+}
+
+/* line 403, ../sass/ari.scss */
+#content table tr th {
+  padding: 10px 20px 10px 20px;
+  border-top: 1px solid #4C4C4C;
+  border-left: 1px solid #4C4C4C;
+  border-right: 1px solid #4C4C4C;
+}
+
+/* line 409, ../sass/ari.scss */
+#content table tr td {
+  padding: 10px 20px 10px 20px;
+  border-left: 1px solid #4C4C4C;
+  border-right: 1px solid #4C4C4C;
+}
+
+/* line 414, ../sass/ari.scss */
+#content img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+/* line 419, ../sass/ari.scss */
+#content img.wp-post-image {
+  margin: 5px 15px 5px 0 !important;
+  padding: 0;
+  float: left;
+}
+
+/* line 424, ../sass/ari.scss */
+#content img.wp-smiley {
+  display: inline;
+}
+
+/* line 427, ../sass/ari.scss */
+#content img.alignleft {
+  margin: 5px 10px 10px 0px;
+}
+
+/* line 430, ../sass/ari.scss */
+#content img.alignright {
+  margin: 5px 0px 5px 10px;
+}
+
+/* line 433, ../sass/ari.scss */
+#content img.alignnone {
+  margin: 10px 0px 10px 0px;
+}
+
+/* line 436, ../sass/ari.scss */
+#content .wp-caption {
+  max-width: 100%;
+  display: block;
+}
+
+/* line 440, ../sass/ari.scss */
+#content p.wp-caption-text {
+  font-family: 'Droid Serif',  Times, serif;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 18px;
+  padding: 7px 0px 10px 0px;
+}
+
+/* line 449, ../sass/ari.scss */
+#content object,
+#content embed,
+#content iframe {
+  display: block;
+  max-width: 100%;
+  margin: 3px 0 10px 0;
+}
+
+/* line 454, ../sass/ari.scss */
+#content .post p.meta, #content .page p.meta {
+  margin: 15px 0px 0px 0px;
+  padding: 10px 0px 5px 0px;
+  background: url(images/meta-border.jpg) 0 0 no-repeat;
+  font-size: 12px;
+  line-height: 19px;
+  clear: both;
+}
+
+/* line 462, ../sass/ari.scss */
+#content .post p.meta span, #content .page p.meta span {
+  padding: 0px 0px 0px 0px;
+  font-family: 'Droid Serif',  Times, serif;
+  font-size: 12px;
+  line-height: 19px;
+  font-style: italic;
+}
+
+/* line 469, ../sass/ari.scss */
+a.post-edit-link {
+  font-family: 'Droid Serif',  Times, serif;
+  font-size: 12px;
+  font-style: italic;
+}
+
+/* line 474, ../sass/ari.scss */
+#content p.previous {
+  float: left;
+  font-size: 14px;
+}
+
+/* line 478, ../sass/ari.scss */
+#content p.next {
+  float: right;
+  font-size: 14px;
+}
+
+/* line 482, ../sass/ari.scss */
+#content .sticky h3.sticky-label {
+  font-size: 10.5px;
+  font-weight: normal;
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Single Post
+--------------------------------------------- */
+/* line 491, ../sass/ari.scss */
+#content .post #author-info {
+  margin: 20px 0px 30px 0px;
+  padding: 10px 0px 0px 0px;
+  border-top: 1px dotted #4C4C4C;
+  border-bottom: 1px dotted #4C4C4C;
+  overflow: hidden;
+}
+
+/* line 498, ../sass/ari.scss */
+#content .post #author-avatar {
+  margin: 5px 15px 0px 0px;
+  float: left;
+}
+
+/* line 502, ../sass/ari.scss */
+#content .post #author-description {
+  overflow: hidden;
+}
+
+/* line 505, ../sass/ari.scss */
+#content .post #author-description h2 {
+  padding: 0px;
+  font-family: 'Droid Serif',  Times, serif;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+/* line 511, ../sass/ari.scss */
+#content .post #author-description h2 span {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* line 516, ../sass/ari.scss */
+#content .post #author-description p, .page-link {
+  font-family: 'Droid Serif',  Times, serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-style: italic;
+}
+
+/* --- Comments --- */
+/* line 524, ../sass/ari.scss */
+.post .comments-content {
+  margin: 6px 0px 0px 0px;
+  border-top: 1px dotted #4C4C4C;
+}
+
+/* line 528, ../sass/ari.scss */
+#content .post #comments-content h3#comments {
+  padding: 80px 0px 8px 0px;
+  border-bottom: 1px dotted #4C4C4C;
+  font-size: 16px;
+}
+
+/* line 533, ../sass/ari.scss */
+#comments-content .comment-body p {
+  padding: 0px 0px 10px 0px;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+/* line 538, ../sass/ari.scss */
+#comments-content p.moderation {
+  font-family: 'Droid Serif',  Times, serif;
+  font-size: 12px;
+  font-style: italic;
+  color: #999;
+}
+
+/* line 545, ../sass/ari.scss */
+#content .post #comments-content ol,
+#content #page #comments-content ol {
+  padding: 0px;
+}
+
+/* line 549, ../sass/ari.scss */
+#content .post #comments-content ol li ul.children,
+#content #page #comments-content ol li ul.children {
+  padding: 0px;
+}
+
+/* line 552, ../sass/ari.scss */
+#content .post #comments-content ol li.depth-1 {
+  padding: 25px 0px 10px 0px;
+  border-bottom: 1px dotted #4C4C4C;
+  overflow: hidden;
+}
+
+/* line 564, ../sass/ari.scss */
+#comments-content ol li.depth-2,
+#content #page #comments-content ol li.depth-2,
+#comments-content ol li.depth-3,
+#content #page #comments-content ol li.depth-3,
+#comments-content ol li.depth-4,
+#content #page #comments-content ol li.depth-4,
+#comments-content ol li.depth-5,
+#content #page #comments-content ol li.depth-5 {
+  margin: 10px 0px 0px 30px;
+  padding: 25px 0px 0px 0px;
+  border-top: 1px dotted #4C4C4C;
+  border-bottom: none;
+  overflow: hidden;
+}
+
+/* line 571, ../sass/ari.scss */
+.comment-meta {
+  padding: 0px 0px 10px 0px;
+  font-family: 'Droid Serif',  Times, serif;
+  font-size: 12px;
+  font-style: italic;
+}
+
+/* line 577, ../sass/ari.scss */
+.comment-gravatar {
+  margin: 1px 15px 0px 0px;
+  float: left;
+}
+
+/* line 581, ../sass/ari.scss */
+#comments-content .comment-body {
+  padding: 0px;
+  overflow: hidden;
+}
+
+/* line 585, ../sass/ari.scss */
+.reply {
+  margin: 10px 0px 0px 0px;
+  float: right;
+}
+
+/* line 589, ../sass/ari.scss */
+a.comment-reply-link {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* line 593, ../sass/ari.scss */
+p.logged-in-as {
+  font-family: 'Droid Serif',  Times, serif;
+  font-size: 12px;
+  font-style: italic;
+}
+
+/* line 598, ../sass/ari.scss */
+#comments-content ol li.post.pingback {
+  margin: 0px;
+  padding: 20px 0px 10px 20px;
+  list-style: none;
+}
+
+/* line 603, ../sass/ari.scss */
+#content #comments-content .comment-body ol {
+  padding: 6px 0 6px 30px;
+  line-height: 1.3;
+}
+
+/* line 607, ../sass/ari.scss */
+#content #comments-content .comment-body ol li {
+  list-style: decimal !important;
+}
+
+/* line 610, ../sass/ari.scss */
+#content #comments-content .comment-body ol li ol li {
+  list-style: upper-alpha !important;
+}
+
+/* line 613, ../sass/ari.scss */
+#content #comments-content .comment-body ol li ol ol li {
+  list-style: lower-roman !important;
+}
+
+/* --- Comment Reply --- */
+/* line 619, ../sass/ari.scss */
+a#cancel-comment-reply-link {
+  padding: 3px 0px 0px 0px;
+  float: right;
+  font-size: 12px;
+}
+
+/* line 624, ../sass/ari.scss */
+#content .post #comments-content #respond h3#reply-title {
+  padding: 80px 0px 6px 0px;
+  border-bottom: 1px dotted #4C4C4C;
+  font-size: 16px;
+}
+
+/* line 629, ../sass/ari.scss */
+#content .post form#commentform p {
+  font-size: 13px;
+}
+
+/* line 632, ../sass/ari.scss */
+form#commentform p.comment-notes {
+  padding: 5px 0px 15px 0px;
+  font-family: 'Droid Serif',  Times, serif;
+  font-size: 12px;
+  font-style: italic;
+}
+
+/* line 638, ../sass/ari.scss */
+form#commentform input#author, form#commentform input#email, form#commentform input#url {
+  font-family: 'Droid Sans', arial, sans-serif;
+  height: 22px;
+  display: block;
+}
+
+/* line 643, ../sass/ari.scss */
+form#commentform textarea#comment {
+  width: 90%;
+  padding: 3px;
+  font-family: 'Droid Sans', arial, sans-serif;
+}
+
+/* line 648, ../sass/ari.scss */
+form#commentform p.comment-form-author, form#commentform p.comment-form-email, form#commentform p.comment-form-url, form#commentform p.comment-form-comment {
+  padding: 10px 0px 0px 0px;
+}
+
+/* line 651, ../sass/ari.scss */
+form#commentform p.form-submit input#submit {
+  margin: 8px 0px 10px 1px;
+  padding: 6px 8px 6px 8px;
+  background: #4C4C4C;
+  border: none;
+  font-family: 'Droid Sans', arial, sans-serif;
+  font-size: 12px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* --- Comments Navigation --- */
+/* line 662, ../sass/ari.scss */
+.nav-previous {
+  float: left;
+  margin: 20px 0 0 0;
+}
+
+/* line 666, ../sass/ari.scss */
+.nav-next {
+  float: right;
+  margin: 20px 0 0 0;
+}
+
+/* WordPress Image Gallery
+--------------------------------------------- */
+/* line 673, ../sass/ari.scss */
+.gallery {
+  margin: auto;
+  padding: 5px 0px 5px 0px;
+}
+
+/* line 677, ../sass/ari.scss */
+.gallery .gallery-item {
+  float: left;
+  margin: 10px 5px 0px 5px;
+  text-align: center;
+  width: 30%;
+  vertical-align: top;
+}
+
+/* line 684, ../sass/ari.scss */
+.gallery img {
+  border: 1px solid #cfcfcf;
+}
+
+/* line 687, ../sass/ari.scss */
+.gallery .gallery-caption {
+  margin-left: 0;
+  padding: 5px 0px 8px 0px;
+  font-family: 'Droid Serif',  Times, serif;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 18px;
+}
+
+/* Footer
+--------------------------------------------- */
+/* line 698, ../sass/ari.scss */
+#footer p {
+  line-height: 19px;
+}
+
+/* Archives 
+--------------------------------------------- */
+/* line 704, ../sass/ari.scss */
+h1.archive {
+  margin: 0px 0px 25px 0px;
+  padding: 0px 0px 10px 0px;
+  border-bottom: 1px dotted #4C4C4C;
+  font-family: 'Droid Serif',  Times, serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: italic;
+  letter-spacing: 0.1em;
+}
+
+/* line 714, ../sass/ari.scss */
+h1.archive strong {
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+/* Pages 
+--------------------------------------------- */
+/* line 721, ../sass/ari.scss */
+#page {
+  margin-bottom: 50px;
+  padding: 0px 0px 6px 0px;
+  border-bottom: 1px dotted #4C4C4C;
+}
+
+/* line 726, ../sass/ari.scss */
+#page h1 {
+  padding: 0px 0px 20px 0px;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+/* line 731, ../sass/ari.scss */
+#page h2 {
+  font-size: 16px;
+  line-height: 23px;
+}
+
+/* line 735, ../sass/ari.scss */
+#page p {
+  padding: 0px 0px 15px 0px;
+  font-size: 14px;
+  line-height: 23px;
+}
+
+/* line 740, ../sass/ari.scss */
+#page p small {
+  font-size: 13px;
+}
+
+/* Plugin Styles
+--------------------------------------------- */
+/* --- Contact Form 7 --- */
+/* line 747, ../sass/ari.scss */
+#content .wpcf7 {
+  padding: 20px 0px 20px 0px;
+}
+
+/* line 750, ../sass/ari.scss */
+#content #page .wpcf7 p {
+  padding: 0px 0px 10px 0px;
+  font-size: 13px;
+}
+
+/* line 754, ../sass/ari.scss */
+input.wpcf7-text {
+  height: 22px;
+}
+
+/* line 757, ../sass/ari.scss */
+.wpcf7 textarea {
+  font-family: 'Droid Sans', arial, sans-serif;
+  font-size: 14px;
+}
+
+/* line 761, ../sass/ari.scss */
+input.wpcf7-submit {
+  margin: 0px;
+  padding: 6px 8px 6px 8px;
+  background: #4C4C4C;
+  border: none;
+  font-family: 'Droid Sans', arial, sans-serif;
+  font-size: 12px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* line 771, ../sass/ari.scss */
+.wpcf7-response-output, .wpcf7-not-valid-tip {
+  margin: 0px;
+  font-family: 'Droid Serif',  Times, serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-style: italic;
+}
+
+/* --- jQuery Thickbox --- */
+/* line 779, ../sass/ari.scss */
+#TB_window img#TB_Image {
+  border-bottom: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-top: none !important;
+  margin: 15px 0px 0px 15px;
+}
+
+/* line 786, ../sass/ari.scss */
+#TB_caption {
+  height: 30px !important;
+  padding: 7px 15px 15px 15px !important;
+}
+
+/* line 790, ../sass/ari.scss */
+#TB_secondLine {
+  padding: 4px 0px 0px 0px;
+}
+
+/* line 793, ../sass/ari.scss */
+#TB_closeWindow {
+  height: 30px !important;
+  padding: 11px 15px 10px 0px !important;
+}
+
+/* line 797, ../sass/ari.scss */
+#TB_window a {
+  color: #4c4c4c !important;
+}
+
+/* Responsiveness
+--------------------------------------------- */
+@media screen and (max-width: 870px) {
+  /* line 804, ../sass/ari.scss */
+  #wrap {
+    max-width: 870px;
+    margin: 25px auto 0 auto;
+    padding: 0px 15px 0px 15px;
+    overflow: hidden;
+  }
+
+  /* line 810, ../sass/ari.scss */
+  #sidebar-primary {
+    width: 240px;
+    position: fixed;
+  }
+
+  /* line 814, ../sass/ari.scss */
+  #main {
+    width: 72%;
+    float: right;
+    overflow: hidden;
+  }
+
+  /* line 819, ../sass/ari.scss */
+  #content {
+    width: 87.2%;
+    margin: 0px 0px 50px 0px;
+    padding: 0px 0px 0px 80px;
+    float: none;
+  }
+
+  /* line 825, ../sass/ari.scss */
+  #sidebar-secondary {
+    width: 87.2%;
+    margin: 0px 0px 50px 0px;
+    padding: 50px 0px 0px 80px;
+    float: none;
+    overflow: hidden;
+  }
+
+  /* --- Secondary Sidebar Widgets --- */
+  /* line 833, ../sass/ari.scss */
+  #sidebar-secondary img.banner {
+    max-width: 100%;
+    display: block;
+    margin: 0px 10px 10px 0px;
+  }
+
+  /* line 838, ../sass/ari.scss */
+  #sidebar-secondary ul.sidebar li.widget-container {
+    width: 100%;
+    margin: 0px 20px 30px 0px;
+    padding: 0px 0px 10px 0px;
+    float: left;
+    border-bottom: 1px dotted #4C4C4C;
+    overflow: hidden;
+  }
+
+  /* line 846, ../sass/ari.scss */
+  #sidebar-secondary ul li.widget_sociallinks ul li, #sidebar-secondary ul.sidebar li.widget_pages ul li, #sidebar-secondary ul.sidebar li.widget_archive ul li, #sidebar-secondary ul.sidebar li.widget_categories ul li, #sidebar-secondary ul.sidebar li.widget_links ul li {
+    float: left;
+    margin: 0px 22px 5px 0px;
+  }
+
+  /* line 850, ../sass/ari.scss */
+  #sidebar-secondary ul .search-input {
+    width: 50%;
+    margin: 0px 0px 4px 0px;
+    padding: 2px 3px 3px 3px;
+    border: 1px solid #999;
+    font-size: 12px;
+  }
+
+  /* line 857, ../sass/ari.scss */
+  #searchsubmit {
+    margin: 0px 0px 0px 5px;
+    padding: 4px 7px 4px 7px;
+    float: none;
+    background: #4C4C4C;
+    border: none;
+    font-family: 'Droid Sans', arial, sans-serif;
+    font-size: 12px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  /* --- Footer --- */
+  /* line 869, ../sass/ari.scss */
+  #footer {
+    width: 62.5%;
+    float: right;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 770px) {
+  /* line 877, ../sass/ari.scss */
+  #wrap {
+    max-width: 770px;
+    margin: 25px auto 0 auto;
+    padding: 0px 15px 0px 15px;
+    overflow: hidden;
+  }
+
+  /* line 883, ../sass/ari.scss */
+  #sidebar-primary {
+    width: 240px;
+    position: fixed;
+  }
+
+  /* line 887, ../sass/ari.scss */
+  #main {
+    width: 68.8%;
+    float: right;
+    overflow: hidden;
+  }
+
+  /* line 892, ../sass/ari.scss */
+  #content {
+    width: 88.5%;
+    margin: 0px 0px 50px 0px;
+    padding: 0px 0px 0px 60px;
+    float: none;
+  }
+
+  /* line 898, ../sass/ari.scss */
+  #sidebar-secondary {
+    width: 88.5%;
+    margin: 0px 0px 50px 0px;
+    padding: 50px 0px 0px 60px;
+    float: none;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 620px) {
+  /* line 908, ../sass/ari.scss */
+  #wrap {
+    max-width: 620px;
+    margin: 25px auto 0 auto;
+    padding: 0px 10px 0px 10px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* line 915, ../sass/ari.scss */
+  #sidebar-primary {
+    width: auto;
+    position: relative;
+    float: none;
+    clear: both;
+  }
+
+  /* line 921, ../sass/ari.scss */
+  #sidebar-primary ul li.widget_social_links ul li {
+    float: left;
+  }
+
+  /* line 924, ../sass/ari.scss */
+  #main {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    float: none;
+    clear: both;
+  }
+
+  /* line 931, ../sass/ari.scss */
+  #content {
+    width: auto;
+    margin: 0px 0px 50px 0px;
+    padding: 0;
+    float: none;
+    clear: both;
+  }
+
+  /* line 938, ../sass/ari.scss */
+  #sidebar-secondary {
+    width: auto;
+    padding: 50px 0px 0px 0px;
+    margin: 0px 0px 50px 0px;
+    float: none;
+    clear: both;
+  }
+
+  /* line 945, ../sass/ari.scss */
+  #content img.wp-post-image {
+    width: 100px;
+    margin: 3px 10px 5px 0 !important;
+  }
+
+  /* --- Secondary Sidebar Widgets --- */
+  /* line 950, ../sass/ari.scss */
+  #sidebar-secondary ul.sidebar li.widget-container {
+    width: 100%;
+    margin: 0px 20px 30px 0px;
+    padding: 0px 0px 10px 0px;
+    float: left;
+    border-bottom: 1px dotted #4C4C4C;
+    overflow: hidden;
+  }
+
+  /* line 958, ../sass/ari.scss */
+  form#searchform {
+    width: 99%;
+  }
+
+  /* line 961, ../sass/ari.scss */
+  #sidebar-secondary ul .search-input {
+    width: 60%;
+    margin: 0px 0px 4px 0px;
+    padding: 2px 3px 3px 3px;
+    border: 1px solid #999;
+    font-size: 12px;
+  }
+
+  /* line 968, ../sass/ari.scss */
+  #content h2 {
+    padding: 0px 0px 20px 0px;
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  /* line 973, ../sass/ari.scss */
+  #content .post p {
+    padding: 0px 0px 15px 0px;
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  /* line 978, ../sass/ari.scss */
+  #content p.previous {
+    float: left;
+    font-size: 13px;
+  }
+
+  /* line 982, ../sass/ari.scss */
+  #content p.next {
+    float: right;
+    font-size: 13px;
+  }
+
+  /* --- Comments Reply --- */
+  /* line 987, ../sass/ari.scss */
+  #content .post #comments-content #respond h3#reply-title {
+    padding: 80px 0px 3px 0px;
+    border-bottom: 1px dotted #4C4C4C;
+    font-size: 16px;
+    clear: both;
+  }
+
+  /* line 993, ../sass/ari.scss */
+  a#cancel-comment-reply-link {
+    display: block;
+    padding: 0;
+    float: none;
+    font-size: 12px;
+  }
+
+  /* --- Footer --- */
+  /* line 1000, ../sass/ari.scss */
+  #footer {
+    width: 100%;
+    float: none;
+  }
+}
+/* FLOATS CLEARING
+--------------------------------------------- */
+/* line 1008, ../sass/ari.scss */
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+/* line 1016, ../sass/ari.scss */
+.clearfix:after {
+  clear: both;
+  content: ' ';
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
